@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+[main-input] {
+    border: 1px solid gray;
+    outline: 0;
+}
+.container.success{
+    width: 440px;
+    max-width: 440px;
+}
+.success-reset{
+    min-width: auto;
+    max-width: auto;
+}
+.main-success{
+height: 100%;
+}
+.success-form{
+    height: 85%;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: flex;
+}
+
+.error {
+            background-color: hsl(4.8deg 100% 95.1%);
+            color: #ff6257;
+            position: relative;
+            border: 1px solid #ff6257;
+}
+
+@layer base{
+
+
+}

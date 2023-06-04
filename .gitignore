@@ -1,0 +1,30 @@
+# Ignore dependencies
+node_modules/
+vendor/
+venv/
+
+# Ignore compiled files
+*.exe
+*.o
+*.dll
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.swp
+
+# Ignore IDE or editor-specific files
+.vscode/
+.idea/
+*.sublime-*
+
+# Ignore configuration files
+config.ini
+secrets.yml
+*.env
+
+# Ignore personal or sensitive files
+settings.json
+credentials.txt
+*.pem
+
