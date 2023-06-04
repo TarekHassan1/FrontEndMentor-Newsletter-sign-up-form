@@ -7,11 +7,11 @@ const firstHalf = document.querySelector("[first-half]");
 const secondHalf = document.querySelector("[second-half]");
 const success = document.querySelector("[success]");
 
-const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 btn.addEventListener("click", () => {
     if (regex.test(input.value)) {
-
+        
         HandleSuccess();
 
     } else {
@@ -21,6 +21,7 @@ btn.addEventListener("click", () => {
 })
 
 function HandleSuccess() {
+    if(regex.test(input.value)){
             firstHalf.classList.add("hide");
         secondHalf.classList.add("hide");
         success.classList.add("show");
@@ -54,7 +55,7 @@ function HandleSuccess() {
 
 
             }
-
+}
 }
 // Just To Help me To test Website In Desktop (Useless Scripts)
 window.addEventListener("resize", HandleSuccess);
